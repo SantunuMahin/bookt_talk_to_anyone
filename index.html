@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to Talk to Anyone - Transform Your Communication</title>
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />
+  <style>
+    /* Reset some default browser styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      background: #f4f7f9;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    
+    header {
+      background: #4ad5e2;
+      color: #211a1a;
+      padding: 20px 10%;
+      text-align: center;
+    }
+    
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    
+    header p {
+      font-size: 1.2rem;
+    }
+    
+    .container {
+      flex: 1;
+      padding: 40px 10%;
+    }
+    
+    .book-info {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      margin-bottom: 40px;
+    }
+    
+    .book-image {
+      flex: 1 1 300px;
+      text-align: center;
+    }
+    
+    .book-image img {
+      max-width: 80%;
+      border-radius: 8px;
+    }
+    
+    .book-details {
+      flex: 2 1 300px;
+      padding: 20px;
+    }
+    
+    .book-details h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #4ad5e2;
+    }
+    
+    .book-details p {
+      margin-bottom: 15px;
+    }
+    p::selection{
+        background-color: yellow;
+        color: #000000;
+    }
+    li ::selection{
+        background-color: yellow;
+        color: #000000;
+    }
+    ul ::selection{
+        background-color: yellow;
+        color: #000000;
+    }
+    .benefits, .takeaways {
+      margin-bottom: 40px;
+    }
+    
+    .benefits h3, .takeaways h3 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #4ad5e2;
+    }
+    
+    .benefits ul, .takeaways ul {
+      list-style-type: none;
+      padding-left: 20px;
+    }
+    
+    .benefits li, .takeaways li {
+      position: relative;
+      margin-bottom: 10px;
+      padding-left: 25px;
+    }
+    
+    .benefits li:before, .takeaways li:before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: #4ad8e2;
+      font-weight: bold;
+    }
+    
+    .cta {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
+    .cta button {
+      background: #4ad5e2;
+      color: #000000;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      margin: 10px;
+    }
+    
+    .cta button:hover {
+      background: #35b7b1;
+    }
+    
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 10%;
+    }
+    
+    @media (max-width: 768px) {
+      .book-info {
+        flex-direction: column;
+      }
+      .book-details {
+        padding: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>How to Talk to Anyone</h1>
+    <p>Transform Your Life Through Masterful Communication</p>
+  </header>
+
+  <div class="container">
+    <section class="book-info">
+      <div class="book-image">
+        <!-- Replace the src with your actual image URL -->
+        <img src="Image/10-How-to-Talk-to-Anyone.jpg" alt="Book Cover: How to Talk to Anyone" />
+      </div>
+      <div class="book-details">
+        <h2>Endless Opportunities</h2>
+        <p>In today’s interconnected world, your ability to communicate effectively can unlock endless opportunities. <strong>How to Talk to Anyone</strong> by Leil Lowndes is more than a book—it is a transformative guide that empowers you to engage, influence, and build lasting relationships. Whether you want to boost your career, expand your social circle, or become a more confident conversationalist, this book provides the essential tools for success.</p>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <h3>Discover the Benefits of Mastering Conversation</h3>
+      <ul>
+        <li><strong>Elevate Your Professional Presence:</strong> Stand out in meetings, interviews, and networking events.</li>
+        <li><strong>Build Meaningful Relationships:</strong> Connect with people from all walks of life and foster genuine interactions.</li>
+        <li><strong>Enhance Your Social Skills:</strong> Transform everyday interactions into opportunities for personal growth.</li>
+      </ul>
+    </section>
+
+    <section class="takeaways">
+      <h3>Key Takeaways You Will Learn</h3>
+      <ul>
+        <li><strong>Effective Icebreakers:</strong> Initiate conversations with ease.</li>
+        <li><strong>Active Listening Skills:</strong> Listen deeply and respond thoughtfully.</li>
+        <li><strong>Powerful Body Language:</strong> Communicate confidence with non-verbal cues.</li>
+        <li><strong>Networking Strategies:</strong> Build and maintain a robust professional network.</li>
+      </ul>
+    </section>
+
+    <section class="cta">
+      <button id="purchaseBtn">Purchase Now</button>
+      <button id="learnMoreBtn">Learn More</button>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Your Company Name. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // JavaScript for button actions
+    document.getElementById('purchaseBtn').addEventListener('click', function () {
+      // Replace the URL with your purchase page or checkout link
+      window.location.href = 'https://www.goodreads.com/book/show/35210.How_to_Talk_to_Anyone';
+    });
+
+    document.getElementById('learnMoreBtn').addEventListener('click', function () {
+      // Replace with the URL for more information or an about page
+      window.location.href = 'https://www.goodreads.com/book/show/35210.How_to_Talk_to_Anyone';
+    });
+  </script>
+</body>
+</html>
